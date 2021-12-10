@@ -3,20 +3,46 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-
+    /* không trang trí chữ */
 }
-
+  
+  
+  /* Những phần style chung */
 .max-width {
     max-width: 1300px;
+    /* chiều ngang <= 1300px */
     padding: 50px;
     margin: 0px auto;
 }
   
-
+/* Style thanh orange-bar */
+  .max-width .orange-bar {
+    width: 100px;
+    height: 2px;
+    background-color: orange;
+    margin-top: 30px;
+}
+  
+.max-width .title {
+    font-size: 40px;
+    text-align: center;
+}
+  
+/* Hết phần style chung */
+  
+  
+/* Home-menu */
+  
 .home-menu {
     background-image: url(./image/OmniPage/hero.jpg);
     height: 700px;
     background-size: cover;
+  
+    /*phần 2: */
+    position: relative;
+    /* Đánh dấu lại vị trí của thẻ */
+    z-index: 1;
+  
 }
   
 nav {
@@ -26,7 +52,7 @@ nav {
 .home-menu nav .max-width {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
   
 nav .menu a {
@@ -43,17 +69,260 @@ nav .menu a:hover {
     color: orange;
 }
   
-
+/* style logo */
 .max-width .logo img {
     height: 80px;
     width: 80px;
+  
 }
   
 .max-width .menu {
     width: 800px;
     line-height: 80px;
     list-style: none;
+  
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    /* align-items: center; */
+}
+  
+  
+  /* phần 2: opacity */
+.opacity-menu {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+  
+    position: absolute;
+    z-index: 2;
+}
+  
+.max-width .logo {
+    z-index: 3;
+}
+  
+nav .menu a {
+    z-index: 3;
+}
+  
+  
+.content-menu {
+    width: 700px;
+    height: 200px;
+    margin-left: 10%;
+    padding: 50px;
+  
+    margin-top: 8%;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+  
+.content-menu .text p {
+    font-size: 50px;
+    font-weight: 150;
+    line-height: 60px;
+}
+  
+.content-menu .multi-button {
+    width: 320px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.content-menu .multi-button button {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+    border: 1px solid orange;
+    border-radius: 30px;
+}
+  
+#button1 {
+    background-color: orange;
+    color: #fff;
+  
+}
+  
+#button2 {
+    color: orange;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+  
+  
+/* Home content */
+.home-content .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.home-content .max-width .about {
+    margin-top: 30px;
+}
+  
+.max-width .about p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+  
+/* Box content */
+.home-content .max-width .content-boxes {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.content-boxes .content-box {
+    width: 250px;
+    height: fit-content;
+}
+  
+.content-boxes .content-box i {
+    color: orange;
+    font-size: 50px;
+    line-height: 70px;
+}
+  
+.content-boxes .content-box .title {
+    text-align: left;
+    font-size: 20px;
+    line-height: 40px;
+}
+  
+.content-boxes .content-box p {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.img-container1{
+    display: flex;
+    width: 100%;
+}
+
+.img-container1 .imgs{
+    margin: 0px;
+    padding: 0px;
+    width: 25%;
+}
+
+.img-container2{
+    display: flex;
+    width: 100%;
+}
+
+.img-container2 .imgs{
+    width: 25%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content4{
+    padding-top: 50px;
+    background-color: rgb(233, 233, 233);
+}
+.content4 .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content4 .orange-bar{
+    margin-bottom: 50px;
+}
+.content4 .max-width .content-boxes2{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.content4 .max-width .box{
+    width:20%;
+    margin-left: 270px;
+}
+.content4 .mini-content1{
+    align-self: end;
+}
+.mini-box{
+    padding: 20px;
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 30px;
+}
+.content4 .content-boxes2 .mini-content1{
+    margin-left: 70px;
+}
+.content4 .content-boxes2 .mini-content2{
+    margin-left: 20px;
+}
+.content4 .content-boxes2 .mini-content2 .contact1{
+    padding-right: 10px;
+}
+.content4 .content-boxes2 .mini-content2 .contact2{
+    width: 22%;
+}
+
+.content5 .max-width {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content5 .max-width .content-boxes-place {
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.place{
+    width: 250px;
+}
+.content-boxes-place .content-box-place {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    text-align: justify;
+}
+.content-box-place {
+    padding: 10px;
+}
+.info{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.content-boxes-place .content-box-place i {
+    color: orange;
+    padding: 6px;
+}
+
+
+.content6 .max-width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 650px;
+}
+.content6 .orange-bar{
+    margin-bottom: 50px;
 }
