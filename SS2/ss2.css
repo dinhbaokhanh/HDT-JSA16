@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 50px;
+    margin: 0px auto;
+}
+  
+
+.home-menu {
+    background-image: url(./image/OmniPage/hero.jpg);
+    height: 700px;
+    background-size: cover;
+}
+  
+nav {
+    margin-left: 10%;
+}
+  
+.home-menu nav .max-width {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+  
+nav .menu a {
+    position: relative;
+    display: inline-block;
+    padding: 0px 30px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: -.5px;
+    text-decoration: none;
+}
+  
+nav .menu a:hover {
+    color: orange;
+}
+  
+
+.max-width .logo img {
+    height: 80px;
+    width: 80px;
+}
+  
+.max-width .menu {
+    width: 800px;
+    line-height: 80px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
