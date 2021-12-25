@@ -1,16 +1,29 @@
-// const person = {
-//     user1: "Phước",
-//     user2: "Thành",
-// }
+const person = {
+    user1: "Phước",
+    user2: "Thành",
+}
 
-// window.localStorage.setItem('user', JSON.stringify(person));
-// console.log(window.localStorage.getItem('user'));
+const user = JSON.parse(window.localStorage.getItem('user'));
+console.log(user);
 
-// window.localStorage.removeItem('user1')
-// console.log(JSON.parse(window.localStorage.getItem('user2')));
+user.user1 = "Hà"
+console.log(user);
+
+delete user.user1;
+console.log(user);
+
+for (const key in user) {
+    delete user[key];
+}
+  
+console.log(user);
 
 
 // B2
+// var interval_obj = setInterval(function(){
+//     console.log("DEAD BEATS, LURKING NOW, ");
+//     clearInterval(interval_obj);
+// }, 2000);
 // var interval_obj1 = setInterval(function(){
 //     console.log("DEAD BEATS, LURKING NOW, ");
 //     clearInterval(interval_obj1);
