@@ -34,7 +34,8 @@
 //     clearInterval(interval_obj5);
 // }, 6000);
 
-
+// không thực hiện được ý tưởng ạ
+// hơi loạn anh ạ ;-;
 
 
 
