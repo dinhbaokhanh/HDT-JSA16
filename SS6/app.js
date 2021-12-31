@@ -27,7 +27,7 @@ localStorage.setItem("123457689", "Nguyễn Trung Hiếu, số tiền gửi là:
 ////// Sử dụng Local Storage
 // C1:
 localStorage.getItem("123457689");
-console.log(localStorage.getItem("123457689"));// 
+console.log(localStorage.getItem("123457689"));
 
 // C2:
 localStorage.NTH

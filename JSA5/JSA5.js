@@ -1,21 +1,11 @@
-// const person = {
-//     user1: "Phước",
-//     user2: "Thành",
-// }
-
-// const user = JSON.parse(window.localStorage.getItem('user'));
-// console.log(user);
-
-// user.user1 = "Hà"
-// console.log(user);
-
-// delete user.user1;
-// console.log(user);
-
-// for (const key in user) {
-//     delete user[key];
-// }
-// console.log(user);
+// localStorage.user1 = "Đạt";
+// localStorage.user2 = "Phước";
+// // Update user 2
+// localStorage.user2 = "Mai";
+// // Delete user 2
+// localStorage.removeItem("user2");
+// // Clear all
+// localStorage.clear()
 
 
 // B2
@@ -30,7 +20,7 @@
 // var interval_obj2 = setInterval(function(){
 //     console.log("DEAD BEATS, LURKING NOW, ");
 //     clearInterval(interval_obj2);
-// }, 3000);
+// }, 3000)
 // var interval_obj3 = setInterval(function(){
 //     console.log("DEAD BEATS, LOCK IT DOWN, ");
 //     clearInterval(interval_obj3);
@@ -44,7 +34,7 @@
 //     clearInterval(interval_obj5);
 // }, 6000);
 
-// quả code công nghiệp nhất em từng làm
+
 
 
 
