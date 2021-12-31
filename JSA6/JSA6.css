@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(192, 213, 226);
+}
+fieldset{
+    display: flex;
+    justify-content: center;
+}
+
+legend{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    font-size: 20px;
+    padding-inline: 50px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 0.5em 1em;
+
+    width: 200px;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 10px;
+    width: 80px;
+}
+
+.delete{
+    padding-left: 50%;
+}
+
+

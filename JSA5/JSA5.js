@@ -1,22 +1,21 @@
-const person = {
-    user1: "Phước",
-    user2: "Thành",
-}
+// const person = {
+//     user1: "Phước",
+//     user2: "Thành",
+// }
 
-const user = JSON.parse(window.localStorage.getItem('user'));
-console.log(user);
+// const user = JSON.parse(window.localStorage.getItem('user'));
+// console.log(user);
 
-user.user1 = "Hà"
-console.log(user);
+// user.user1 = "Hà"
+// console.log(user);
 
-delete user.user1;
-console.log(user);
+// delete user.user1;
+// console.log(user);
 
-for (const key in user) {
-    delete user[key];
-}
-  
-console.log(user);
+// for (const key in user) {
+//     delete user[key];
+// }
+// console.log(user);
 
 
 // B2
