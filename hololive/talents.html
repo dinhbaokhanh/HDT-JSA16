@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./talents.css">
+</head>
+<body>
+    <div>
+        <nav>
+            <div class="home-button">
+                <a href="./home.html"> <ul>Home</ul> </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="Talents_list">
+        <h2>Talents List</h2>
+    </div>
+
+    <div class="category_container">
+        <button class="category_item active" onclick="filterSelection('All')"> All </button>
+        <button class="category_item" onclick="filterSelection('Hololive')"> Hololive </button>
+        <button class="category_item" onclick="filterSelection('Myth')"> Myth </button>
+        <button class="category_item" onclick="filterSelection('Council')"> Council </button>
+        <button class="category_item" onclick="filterSelection('Hololive-Indonesia')"> Hololive Indonesia </button>
+    </div>
+
+    <div class="Talents_container">
+        
+            <a href="https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg" class="filter Hololive">
+                <div class="Talents_img">
+                    <img src="./images/TokinoSora.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Tokino Sora</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC1CfXB_kRs3C-zaeTG3oGyg" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/akai_haato_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Akai Haato</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCO_aKKYxn4tvrqPjcTzZ6EQ" class="filter Council">
+                <div class="Talents_img">
+                   <img src="./images/fauna.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Ceres Fauna</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA" class="filter Council">
+                <div class="Talents_img">
+                   <img src="./images/Mumei.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Nanashi Mumei</div>
+                </div>
+            </a>
+        
+            <a href="https://www.youtube.com/channel/UC5CwaMl1eIgY8h02uZw7u8A" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/hoshimachi_suisei_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Hoshimachi Suisei</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/houshou_marine_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                   <div>Houshou Marine</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC8rcEBzJSleTkf_-agPM20g" class="filter Council">
+                <div class="Talents_img">
+                    <img src="./images/irys_list_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Irys</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCYz_5n-uDuChHtLo7My1HnQ" class="filter Hololive-Indonesia">   
+                <div class="Talents_img">
+                    <img src="./images/kureiji_ollie_thumb-2.png.png" alt="">
+                </div>
+                <div class="Talents_name">
+                     <div>Kureji Ollie</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA" class="filter Hololive">        
+                <div class="Talents_img">
+                   <img src="./images/miko_icon_210831.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Sakura Miko</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/minato_aqua_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Minato Aqua</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCl_gCybOJRIgOXw6Qb4qJzQ" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/uruha_rushia_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Uruha Rushia</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCyl1z3jo3XHR1riLFKG5UAg" class="filter Myth">
+                <div class="Talents_img">
+                   <img src="./images/watson_amelia_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Amelia Watson</div>
+                </div>
+            </a>
+        
+            <a href="https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg" class="filter Hololive-Indonesia">
+                <div class="Talents_img">
+                    <img src="./images/moona_hoshinova_thumb-2.png.png" alt="">
+                </div>
+                <div class="Talents_name">
+                     <div>Moona Hoshinova</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg" class="filter Myth">
+                <div class="Talents_img">
+                   <img src="./images/mori_calliope_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Mori Calliope</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg" class="filter Myth">
+                <div class="Talents_img">
+                   <img src="./images/ninomae_Ina_nis_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Ninomae Ina'nis</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww" class="filter Myth">
+                <div class="Talents_img">
+                    <img src="./images/takanashi_kiara_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                     <div>Takanashi Kiara</div>
+                </div>
+            </a>
+        
+            <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/pekora_list_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Usada Pekora</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCdn5BQ06XqgXoAxIhbqw5Rg" class="filter Hololive">
+                <div class="Talents_img">
+                   <img src="./images/shirakami_fubuki_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Shirakami Fubuki</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/c/OuroKroniiCh" class="filter Council">
+                <div class="Talents_img">
+                    <img src="./images/kronii.png" alt="">
+                </div>
+                <div class="Talents_name">
+                     <div>Ouro Kronii</div>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCoSrY_IQQVpmIRZ9Xf-y93g" class="filter Myth">
+                <div class="Talents_img">
+                   <img src="./images/gawr_gura_thumb.png" alt="">
+                </div>
+                <div class="Talents_name">
+                    <div>Gawr Gura</div>
+                </div>
+            </a>
+    </div>
+    
+    <script src="talents.js"></script>
+</body>
+</html>
