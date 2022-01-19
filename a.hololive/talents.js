@@ -1,8 +1,9 @@
-filterSelection("All")
+filterSelection("All");
 function filterSelection(c) {
+  console.log("Run");
   var x, i;
   x = document.getElementsByClassName("filter");
-  if (c == "all") c = "";
+  if (c == "All") c = "";
   for (i = 0; i < x.length; i++) {
     RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
@@ -32,12 +33,12 @@ function RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var category_container = document.getElementsByClassName("category_container");
-var category_item = document.getElementsByClassName("category_item");
-for (var i = 0; i < category_item.length; i++) {
-    category_item[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
+var category_containers = document.getElementsByClassName("category_container");
+var category_items = document.getElementsByClassName("category_item");
+for (var i = 0; i < category_items.length; i++) {
+  category_items[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }

@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="ss1.css">
 </head>
 <body>
-    <h1>Đẩy code các thứ</h1>
+    <div class="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+      </div>
+
+      <div class="container">
+        <a href="https://www.youtube.com/channel/UCp6993wxpyDPHUpavwDFqgg" class="filterDiv cars">
+            <div class="Talents_img">
+                <img src="./images/TokinoSora.png" alt="">
+            </div>
+            <div class="Talents_name">
+                <div>Tokino Sora</div>
+            </div>
+        </a>
+        <div class="filterDiv colors fruits">Orange</div>
+        <div class="filterDiv cars">Volvo</div>
+        <div class="filterDiv colors">Red</div>
+        <div class="filterDiv cars animals">Mustang</div>
+        <div class="filterDiv colors">Blue</div>
+        <div class="filterDiv animals">Cat</div>
+        <div class="filterDiv animals">Dog</div>
+        <div class="filterDiv fruits">Melon</div>
+        <div class="filterDiv fruits animals">Kiwi</div>
+        <div class="filterDiv fruits">Banana</div>
+        <div class="filterDiv fruits">Lemon</div>
+        <div class="filterDiv animals">Cow</div>
+      </div>
+<script src="ss1.js"></script>
 </body>
 </html>

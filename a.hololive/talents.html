@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="./talents.css">
 </head>
 <body>
-    <div>
-        <nav>
+
+    <nav>
+        <div class="max-width">
+          
             <div class="home-button">
                 <a href="./home.html"> <ul>Home</ul> </a>
             </div>
-        </nav>
-    </div>
+
+            <ul class="menu">
+                <a href="#">
+                    <li>Our News</li>
+                </a>
+                <a href="#">
+                    <li>Gallery</li>
+                </a>
+                <a href="./rules.html">
+                    <li>Privacy Policy</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
 
     <div class="Talents_list">
         <h2>Talents List</h2>
     </div>
 
     <div class="category_container">
-        <button class="category_item active" onclick="filterSelection('All')"> All </button>
-        <button class="category_item" onclick="filterSelection('Hololive')"> Hololive </button>
-        <button class="category_item" onclick="filterSelection('Myth')"> Myth </button>
-        <button class="category_item" onclick="filterSelection('Council')"> Council </button>
-        <button class="category_item" onclick="filterSelection('Hololive-Indonesia')"> Hololive Indonesia </button>
+        <button class="category_item active" onclick="filterSelection('All')"> All</button>
+        <button class="category_item" onclick="filterSelection('Hololive')"> Hololive</button>
+        <button class="category_item" onclick="filterSelection('Myth')"> Myth</button>
+        <button class="category_item" onclick="filterSelection('Council')"> Council</button>
+        <button class="category_item" onclick="filterSelection('Hololive-Indonesia')"> Hololive Indonesia</button>
     </div>
 
     <div class="Talents_container">
@@ -211,6 +225,6 @@
             </a>
     </div>
     
-    <script src="talents.js"></script>
+<script src="talents.js"></script>
 </body>
 </html>
