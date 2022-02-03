@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" 
+        href="./770b805d5c99c7931366c2e84e88f251.png"
+        type="image/x-icon">
+        <link rel="stylesheet" href="./weather-app.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="main-section">
+          <!-- Khối trên -->
+
+            <div class="section-bar">
+                <i class="fas fa-search search-icon" ></i>
+                <!--Nhúng thanh search-->
+                <input id="search-input" type="text" placeholder="Tìm kiếm thành phố">
+
+            </div>
+
+            <!--Thông tin hiển thị-->
+            <div class="info-wrapper">
+                <p class="city-name">..</p>
+                <p class="weather-state">..</p>
+                <img src="./770b805d5c99c7931366c2e84e88f251.png" alt="Not found" class="weather-icon">
+                <p class="temperature">25</p>
+            </div>
+            
+        </div>
+    
+    
+        <!-- Đường kẻ -->
+    
+    
+        <div class="additional-section">
+            <!-- Khối dưới -->
+      
+            <div class="row">
+              <div class="item">
+                <div class="label">Mặt trời mọc</div>
+                <div class="value">5:50</div>
+              </div>
+      
+              <div class="item">
+                <div class="label">Mặt trời lặn</div>
+                <div class="value">17:50</div>
+              </div>
+            </div>
+            <!-- Hàng 1 -->
+      
+      
+            <div class="row">
+              <div class="item">
+                <div class="label">Độ ẩm</div>
+                <div class="value">
+                  <span class="humidity">
+                    ...
+                  </span>
+                  %
+                </div>
+              </div>
+      
+              <div class="item">
+                <div class="label">Gió</div>
+                <div class="value">
+                  <span class="wind-speed">
+                    ..
+                  </span>
+                  km/h
+                </div>
+              </div>
+            </div>
+            <!-- Hàng 2 -->
+      
+          </div>
+    
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holo Shop</title>
+    <link rel="shortcut icon" 
+        href="./images/logo.jpg"
+        type="image/x-icon">
+        <link rel="stylesheet" href="./home.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+</head>
+<body>
+    <div class= "home-menu" >
+
+        <nav>
+            <div class="max-width">
+              
+                <div class="logo">
+                    <img src="./images/hololiveshop_logo.png" alt="">
+                </div>
+  
+                <ul class="menu">
+
+                    <a href="#">
+                        <li>Trending</li>
+                    </a>
+
+                    <a href="#">
+                        <li>Best sellers</li>
+                    </a>
+
+                    <a href="#">
+                        <li>New products</li>
+                    </a>
+                
+                </ul>
+
+                <div class="input-bar">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <div class="user">
+                    <a href="./SignIn.html">
+                        <i class="far fa-user fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-shopping-basket fa-2x"></i>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+
+    </div>
+
+    
+    <div class="News">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="./images/mori-calliope-CD.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./images/Still-Still-Stellar-CD.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="./images/IRYS-CD.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+            
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+
+
+    <script src="./home.js"></script>
+</body>
+</html>
