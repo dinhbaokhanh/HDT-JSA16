@@ -53,6 +53,11 @@ nav .user a {
     margin-block-end: 20px;
 }
 
+#blackline {
+    height: 1.5px;
+    background-color: #49c8f0;
+}
+
 /* Code form Sign In */
 
 form {

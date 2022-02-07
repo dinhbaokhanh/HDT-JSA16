@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="./SignIn.css">
+        <link rel="stylesheet" href="./list.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
 
-    <div class= "home-menu">
+
+    <div class= "home-menu" >
 
         <nav>
             <div class="max-width">
               
-                <div class="Home-button">
-                    <a href="./home.html">Home</a>
+                <div class="logo">
+                    <a href="./home.html"><img src="./images/hololiveshop_logo.png" alt=""></a>
                 </div>
   
                 <ul class="menu">
@@ -36,6 +37,11 @@
                 
                 </ul>
 
+                <div class="input-bar">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
                 <div class="user">
                     <a href="./SignIn.html">
                         <i class="far fa-user fa-2x"></i>
@@ -51,39 +57,7 @@
         <div id="blackline"></div>
 
     </div>
-        
-    <div class="container">
 
-        <form>
-            <div class="row header">
-                <h2>Sign Up</h2>
-            </div>
 
-            <div>
-                <p>Please enter your e-mail and password:</p>
-            </div>
-
-            <div class="row row_email">
-                <input type="email" id="email" placeholder="Email" oninvalid="prompt();" required>
-            </div>
-
-            <div class="row row_password">
-                <input type="password" id="password" placeholder="Password" oninvalid="prompt();" required>
-            </div>
-
-            <div class="row">
-                <button type="submit" onclick="submitData()" id="submit">Sign Up</button>
-            </div>
-
-            <p class="AskingUser">Don't have an account? <a href="#">Sign In</a> now</p>
-        </form>
-
-        
-
-    </div>
-
-    
-
-    <script src="./SignIn.js"></script>
 </body>
 </html>

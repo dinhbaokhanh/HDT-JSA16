@@ -47,6 +47,18 @@ ul, li {
     list-style-type:none;
 }
 
+.home-menu {
+    padding-top: 2px;
+    background-color: #ffffff;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.home-menu nav {
+    height: 80px;
+}
+
 .home-menu nav .menu a {
     margin-left: -15px;
     display: inline-block;
@@ -84,6 +96,10 @@ nav .user a {
     margin-block-end: 20px;
 }
 
+#blackline {
+    height: 1.5px;
+    background-color: #49c8f0;
+}
 
 /* sliding */
 
@@ -102,16 +118,17 @@ img {vertical-align: middle;}
 
 
 .slideshow-container {
+    position: relative;
     margin-top: 10px;
     height: 550px;
     max-width: 950px;
-    position: relative;
     margin: auto;
 }
 
 .prev, .next {
     cursor: pointer;
     position: absolute;
+    z-index: 0;
     top: 50%;
     width: auto;
     margin-top: -22px;
