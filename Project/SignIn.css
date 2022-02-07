@@ -95,6 +95,12 @@ a {
     border-radius: 5px;
     cursor: pointer;
     border: none;
+
+    transition-duration: 0.4s;
+    border: 2px solid #49c8f0;
 }
 
-
+button:hover {
+    background-color: #ffffff;
+    color: #49c8f0;
+}
