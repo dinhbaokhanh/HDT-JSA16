@@ -50,5 +50,5 @@ function autoshowSlides() {
     }
     autoslides[autoslideIndex-1].style.display = "block";  
     autodots[autoslideIndex-1].className += " active";
-    setTimeout(autoshowSlides, 9000);
+    setTimeout(autoshowSlides, 6000);
 }
