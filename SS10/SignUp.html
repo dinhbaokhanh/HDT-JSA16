@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./SignUp.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <form id="sign-up">
+            <div class="row header">
+                <h2>Sign Up</h2>
+            </div>
+
+            <div>
+                <p>Please enter your e-mail and password:</p>
+            </div>
+
+            <div class="row row_email">
+                <input name="email" type="email" id="email" placeholder="Email" oninvalid="caution();" required>
+            </div>
+
+            <div class="row row_password">
+                <input name="password" type="password" id="password" placeholder="Password" oninvalid="caution();" required>
+            </div>
+
+            <div class="row row_repeat_password">
+                <input type="password" id="password" placeholder="Repeat password" oninvalid="caution();" required>
+            </div>
+
+            <div class="row">
+                <button type="submit" onclick="submitData()" id="submit">Sign Up</button>
+            </div>
+
+            <p class="AskingUser">Already have an account? <a href="./LogIn.html">Log In</a> now</p>
+
+        </form>
+
+        
+
+    </div>
+
+    <script src="./js/SignUp.js"></script>
+
+</body>
+</html>

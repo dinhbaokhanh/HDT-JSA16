@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./signIn.css">
+    <link rel="stylesheet" href="./LogIn.css">
 </head>
 <body>
     
@@ -13,7 +13,7 @@
 
         <form>
             <div class="row header">
-                <h2>Sign Up</h2>
+                <h2>Log In</h2>
             </div>
 
             <div>
@@ -21,18 +21,18 @@
             </div>
 
             <div class="row row_email">
-                <input type="email" id="email" placeholder="Email" oninvalid="prompt();" required>
+                <input type="email" id="email" placeholder="Email" oninvalid="caution();" required>
             </div>
 
             <div class="row row_password">
-                <input type="password" id="password" placeholder="Password" oninvalid="prompt();" required>
+                <input type="password" id="password" placeholder="Password" oninvalid="caution();" required>
             </div>
 
             <div class="row">
-                <button type="submit" onclick="submitData()" id="submit">Sign Up</button>
+                <button type="submit" onclick="submitData()" id="submit">Log In</button>
             </div>
 
-            <p class="AskingUser">Don't have an account? <a href="#">Sign In</a> now</p>
+            <p class="AskingUser">Don't have an account? <a href="./SignUp.html">Sign Up</a> now</p>
         </form>
 
         
@@ -41,7 +41,7 @@
 
     
 
-    <script src="./signIn.js"></script>
+    <script src="./js/LogIn.js"></script>
 </body>
 </html>
 
