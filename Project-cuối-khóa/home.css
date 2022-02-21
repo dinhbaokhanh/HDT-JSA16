@@ -100,7 +100,7 @@ nav .user a {
 
 .header-wallpaper {
     background-image: url(./images/header-wallpaper.png);
-    height: 650px;
+    height: 680px;
     background-size: cover;
 }
 
@@ -126,6 +126,11 @@ nav .user a {
     height: 300px;
     display: flex;
     align-items: center;
+    flex: 1;
+    position: relative;
+    align-items: center;
+    
+    overflow: hidden;
     grid-template-columns: 285px minmax(300px, 445px);
     max-width: 730px;
     border-radius: 10px;
@@ -144,8 +149,8 @@ nav .user a {
 }
   
 .article-banner {
-    width: 100%;
-    height: fit-content;
+    width: 350px;
+    height: 300px;
     
     object-fit: cover;
     object-position: left;
@@ -165,6 +170,7 @@ nav .user a {
 
 .article-content a {
     color: #000000;
+    font-family: 'Courier New', Courier, monospace;
 }
   
 .article-title {
