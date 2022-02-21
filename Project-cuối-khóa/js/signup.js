@@ -29,5 +29,5 @@ signUp.addEventListener("submit", (event) => {
 
 
   // windows.location.href = '../signIn.html'
-    window.location = "http://signIn.html";
+    window.location.href = "https://github.com/dinhbaokhanh/HDT-JSA16/blob/main/Project-cu%E1%BB%91i-kh%C3%B3a/login.html";
 })
