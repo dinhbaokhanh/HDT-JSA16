@@ -121,13 +121,12 @@ nav .user a {
     cursor: pointer;
 
     margin: 50px;
-    width: 700px;
+    width: 800px;
     height: 300px;
     display: flex;
     align-items: center;
     
     overflow: hidden;
-    max-width: 730px;
     border-radius: 10px;
 }
 
