@@ -17,13 +17,3 @@ const article4 = document.getElementById("thumbnail4");
 article4.addEventListener("click", () => {
     window.location.href = './news/new4.html';
 })
-
-const article5 = document.getElementById("thumbnail5");
-article5.addEventListener("click", () => {
-    window.location.href = './news/new5.html';
-})
-
-const article6 = document.getElementById("thumbnail6");
-article6.addEventListener("click", () => {
-    window.location.href = './news/new6.html';
-})

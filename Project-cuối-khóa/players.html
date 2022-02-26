@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+    <title>Players</title>
     <link rel="shortcut icon" href="./images/MU-LOGO.png" type="image/x-icon">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./players.css">
 </head>
-
 <body>
     
     <div class= "home-menu" >
@@ -32,7 +30,7 @@
                         <li>FIXTURES</li>
                     </a>
 
-                    <a href="#">
+                    <a href="players.html">
                         <li>PLAYERS</li>
                     </a>
                 
@@ -51,41 +49,29 @@
 
     </div>
 
-    <br><br>
-
-
-    <div class="container">
-
-        <form id="sign-in">
-            <div class="row header">
-                <h2>Log In</h2>
-            </div>
-
-            <div>
-                <p>Please enter your e-mail and password:</p>
-            </div>
-
-            <div class="row row_email">
-                <input type="email" id="email" placeholder="Email" oninvalid="caution();" required>
-            </div>
-
-            <div class="row row_password">
-                <input type="password" id="password" placeholder="Password" oninvalid="caution();" required>
-            </div>
-
-            <div class="row">
-                <button type="submit" id="submit">Log In</button>
-            </div>
-
-            <p class="AskingUser">Don't have an account? <a href="./signup.html">Sign Up</a> now</p>
-        </form>
-
-        
-
+    <div class="Players_list">
+        <h2>Players List</h2>
     </div>
 
+    <div class="category_container">
+        <button class="category_item active" onclick="filterSelection('All')"> All</button>
+        <button class="category_item" onclick="filterSelection('Goalkeepers')"> Goalkeepers</button>
+        <button class="category_item" onclick="filterSelection('Defenders')"> Defenders</button>
+        <button class="category_item" onclick="filterSelection('Midfielders')"> Midfielders</button>
+        <button class="category_item" onclick="filterSelection('Attackers')"> Attackers</button>
+    </div>
 
-<script src="./js/login.js"></script>
+    <div class="Players_container">
+        <a class="filter Goalkeepers">
+            <div class="Players_img">
+                <img src="./images/De_Gea_profile_pic.jpg" alt="">
+            </div>
+            <small>1</small>
+            <div class="Players_name">
+                <div>David De Gea</div>
+            </div>
+        </a>
+    </div>
+
 </body>
-
 </html>

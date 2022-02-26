@@ -108,21 +108,22 @@ nav .user a {
 /* NEWS */
 
 .News {
-    height: 900px;
+    height: 960px;
     background-color: #f7f7f7;
 }
 
-.article-wrapper {
+.big-article-wrapper {
     display: flex;
+    justify-content: center;
 }
 
 .article-card {
-    background-color: #ffffff;
+    background-color: #d80000;
     cursor: pointer;
 
     margin: 50px;
-    width: 800px;
-    height: 300px;
+    width: 970px;
+    height: 400px;
     display: flex;
     align-items: center;
     
@@ -153,16 +154,12 @@ nav .user a {
   
 .img-box {
     float: left;
-    border-radius: 10px 0 0 10px;
     overflow: hidden;
 }
   
 .article-banner {
-    width: 350px;
-    height: 300px;
-    
-    object-fit: cover;
-    object-position: left;
+    width: 100%;
+    height: 600px;
     transition: all 0.5s ease;
 }
 
@@ -170,7 +167,6 @@ nav .user a {
     transition: all 0.5s ease;
 }
 
-  
 .article-card:hover .article-banner { 
     transform: scale(1.1); 
 }
@@ -180,30 +176,26 @@ nav .user a {
 }
   
 .article-content {
-    background-color: #ffffff;
+    background-color: #d80000;
     padding: 32px 40px;
-    border-radius: 0 10px 10px 0;
-    border-color: #b1b1b1;
+    width: 500px;
 }
 
 .article-content a {
-    color: #000000;
-    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.article-content small {
+    color: #ffffff;
+    font-size: 15px;
 }
   
 .article-title {
-    font-family: SourceSansProRegular,Helvetica,sans-serif;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin-bottom: 12px;
-    line-height: 1.4;
-}
-  
-.article-text {
-    font-size: 14px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    line-height: 1.5;
-    text-align:left;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 1.4;
 }
 
 .time {
@@ -213,14 +205,13 @@ nav .user a {
 
 .small-article-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center ;
     flex-wrap: wrap;
 }
 
 .card-header img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
 }
 .card-body {
     display: flex;
@@ -232,6 +223,7 @@ nav .user a {
 .card-body p {
     font-size: 15px;
     margin: 0 0 40px;
+    text-align: left;
 }
 
 .time {
