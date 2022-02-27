@@ -134,8 +134,8 @@ nav .user a {
 }
 .team {
     display: flex;
+    width: 130px;
 }
-
 .img-card {
     width: 50px;
 }
@@ -149,5 +149,7 @@ nav .user a {
 
     border-radius: 5px;
 }
-
+.team2 {
+    margin-left: 17px;
+}
 
