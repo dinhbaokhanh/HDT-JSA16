@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
     <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="./SignIn.css">
+        <link rel="stylesheet" href="./Style.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
@@ -64,18 +64,18 @@
             </div>
 
             <div class="row row_email">
-                <input type="email" id="email" placeholder="Email" oninvalid="prompt();" required>
+                <input type="email" id="email" placeholder="Email" oninvalid="caution();" required>
             </div>
 
             <div class="row row_password">
-                <input type="password" id="password" placeholder="Password" oninvalid="prompt();" required>
+                <input type="password" id="password" placeholder="Password" oninvalid="caution();" required>
             </div>
 
             <div class="row">
-                <button type="submit" onclick="submitData()" id="submit">Sign Up</button>
+                <button type="submit" id="submit">Sign Up</button>
             </div>
 
-            <p class="AskingUser">Don't have an account? <a href="#">Sign In</a> now</p>
+            <p class="AskingUser">Already have an account? <a href="./LogIn.html">Log In</a> now</p>
         </form>
 
         
@@ -84,6 +84,6 @@
 
     
 
-    <script src="./SignIn.js"></script>
+    <script src="./js/LogIn.js"></script>
 </body>
 </html>
