@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+a {
+    color: black;
+}
+
 
 button {
     width: 200px;
