@@ -109,13 +109,19 @@ h2::after {
 
 /* goods */
 .wrapper {
-    display: flex;    
+    margin-left: 100px;
+    display: flex;   
 }
 
 /* filter */
 
+.filter {
+    margin: 20px;
+    margin-right: 80px;
+}
+
 .filter_main {
-    padding: 0 0 14px;
+    padding: 0 0 20px;
     margin-bottom: 16px;
     line-height: 20px;
     border-bottom: 1px solid #1c1b1b;
@@ -123,7 +129,6 @@ h2::after {
 }
 
 .checkbox {
-    padding-left: 35px;
     position: relative;
     width: auto;
 
@@ -137,10 +142,14 @@ h2::after {
     transition: all .2s ease-in-out;
 
     
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .checkbox label {
+    width: 200px;
+    cursor: pointer;
+}
+.checkbox input {
     cursor: pointer;
 }
 
@@ -149,20 +158,19 @@ h2::after {
 /* list */
 .items-wrapper {
     margin-top: 40px;
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .items {
-    max-width: 250px;
+    max-width: 220px;
     margin: 20px;
 }
 
 .items-image {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 220px;
+    max-height: 220px;
 }
 
 .items-name {
