@@ -26,7 +26,7 @@ function getClassOfCheckedCheckboxes(checkboxes) {
 }
   
 function filterResults(filters) {
-    var rElems = document.querySelectorAll(".goods div");
+    var rElems = document.querySelectorAll(".goods .items");
     var hiddenElems = [];
   
     if (!rElems || rElems.length <= 0) {
