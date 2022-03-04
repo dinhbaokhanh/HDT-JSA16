@@ -11,83 +11,136 @@
 </head>
 <body>
 
-    <div class= "home-menu" >
-        
-        <nav>
-            <div class="max-width">
-              
-                <div class="logo">
-                    <a href="../home.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
-                </div>
-  
-                <ul class="menu">
-
-                    <a href="./list.html">
-                        <li>Products</li>
-                    </a>
-
-                    <a href="./Upcoming.html">
-                        <li>Upcoming Goods</li>
-                    </a>
-
-                </ul>
-
-
-                <div class="user">
-                    <a href="./LogIn.html">
-                        <i class="far fa-user fa-2x"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fas fa-shopping-basket fa-2x"></i>
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-
-        <div id="blackline"></div>
-
-    </div>
-
-    <br><br><br>
-    
-    <div class="product">
-
-        <div class="product-images">
-
-            <div class="content">
-                <img class="mySlides" src="./images/polka_BD2022_top_900x.webp" >
-                <img class="mySlides" src="./images/polka_BD2022_set_900x.webp" >
-                <img class="mySlides" src="./images/polka_BD2022_tanpin01_900x.webp" >
-                <img class="mySlides" src="./images/polka_BD2022_tanpin02_900x.webp" >
-                <img class="mySlides" src="./images/polka_BD2022_tanpin03_900x.webp" >
-            </div>
-              
-            <div class="image-switch">
-                
-                <img src="./images/polka_BD2022_top_900x.webp" class="image-button demo" onclick="currentDiv(1)" alt="">
-                <img src="./images/polka_BD2022_set_900x.webp" class="image-button demo" onclick="currentDiv(2)" alt="">
-                <img src="./images/polka_BD2022_tanpin01_900x.webp" class="image-button demo" onclick="currentDiv(3)" alt="">
-                <img src="./images/polka_BD2022_tanpin02_900x.webp" class="image-button demo" onclick="currentDiv(4)" alt="" > 
-                <img src="./images/polka_BD2022_tanpin03_900x.webp" class="image-button demo" onclick="currentDiv(5)" alt="" > 
+    <div>
+        <div class= "home-menu" >
             
+            <nav>
+                <div class="max-width">
+                
+                    <div class="logo">
+                        <a href="../home.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
+                    </div>
+    
+                    <ul class="menu">
+
+                        <a href="../list.html">
+                            <li>Products</li>
+                        </a>
+
+                        <a href="../Upcoming.html">
+                            <li>Upcoming Goods</li>
+                        </a>
+
+                    </ul>
+
+
+                    <div class="user">
+                        <a href="../LogIn.html">
+                            <i class="far fa-user fa-2x"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-shopping-basket fa-2x"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+
+            <div id="blackline"></div>
+
+        </div>
+
+        <br><br><br>
+        
+        <div class="product">
+
+            <div class="product-images">
+
+                <div class="content">
+                    <img class="mySlides" src="./images/polka_BD2022_top_900x.webp" >
+                    <img class="mySlides" src="./images/polka_BD2022_set_900x.webp" >
+                    <img class="mySlides" src="./images/polka_BD2022_tanpin01_900x.webp" >
+                    <img class="mySlides" src="./images/polka_BD2022_tanpin02_900x.webp" >
+                    <img class="mySlides" src="./images/polka_BD2022_tanpin03_900x.webp" >
+                </div>
+                
+                <div class="image-switch">
+                    
+                    <img src="./images/polka_BD2022_top_900x.webp" class="image-button" onclick="currentDiv(1)" alt="">
+                    <img src="./images/polka_BD2022_set_900x.webp" class="image-button " onclick="currentDiv(2)" alt="">
+                    <img src="./images/polka_BD2022_tanpin01_900x.webp" class="image-button " onclick="currentDiv(3)" alt="">
+                    <img src="./images/polka_BD2022_tanpin02_900x.webp" class="image-button " onclick="currentDiv(4)" alt="" > 
+                    <img src="./images/polka_BD2022_tanpin03_900x.webp" class="image-button " onclick="currentDiv(5)" alt="" > 
+                
+                </div>
+
             </div>
 
-        </div>
+            <div class="product-info">
+                <div class="title">Omaru Polka Birthday Celebration 2022</div>
+                <div class="bar"></div>
+                <br>
+                <p>This product is to celebrate the birthday of Omaru Polka from hololive.</p>
+                <br>
+                <p>◇Birthday Merch Complete Set
+                    <br>〈Set Details〉
+                    <br>This is the complete set of merch to celebrate the birthday of Omaru Polka.
+                    <br>
+                    <br>〈Content〉
+                    <br>・3 Birthday Merch
+                    <br>・Bonus for all set: Polaroid-style bromide card with handwritten autograph from Omaru Polka. (Art by 木なこ)
+                </p>
+                <br><br>
+                <div class="set">Set:</div>
 
-        <div class="product-info">
-            <div class="title">Omaru Polka Birthday Celebration 2022</div>
-            <div class="bar"></div>
-            <p>This product is to celebrate the birthday of Omaru Polka from hololive.</p>
-            <br>
-            <p>Birthday Merch Complete Set</p>
-            <br>
-            <p>〈Content〉</p>
-            <p>・3 Birthday Merch</p>
-            <p>Bonus: Polaroid-style bromide card with handwritten autograph from Omaru Polka. (Art by 木なこ)</p>
+                <div id="container">
+                    
+                    <label class="options demo" onclick="sel(this) ;currentDiv(2)" >
+                        <div class="set-name">All set and bonus</div>
+                        <div class="set-info">
+                            <div class="set-price">2,200,000 VND</div>
+                            <div class="yellow-cautions">
+                                <div class="buy-all">CHEAPER!</div>
+                                <div class="stock"> In Stock </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(3)">
+                        <div class="set-name">Rubber Mat</div>
+                        <div class="set-info">
+                            <div class="set-price">599,000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(4)">
+                        <div class="set-name">Global Fashion Statement ! Polka's Secret Fan Backpack</div>
+                        <div class="set-info">
+                            <div class="set-price">1,395,000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(5)">
+                        <div class="set-name">Anywhere You Go! Static Polpeller Headband</div>
+                        <div class="set-info">
+                            <div class="set-price">499,000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+                    
+                    
+
+                </div>
+
+            </div>
+    
         </div>
- 
+    
     </div>
+
+    <br><br>
     
 
     <script src="../js/goods.js"></script>
