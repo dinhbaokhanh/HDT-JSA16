@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+.home-menu nav .max-width {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 10px 20px;
+    margin-top: 10px;
+
+}
+
+ul, li {
+    list-style-type:none;
+}
+
+.home-menu {
+    padding-top: 2px;
+    background-color: #ffffff;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.home-menu nav {
+    height: 80px;
+}
+
+.home-menu nav .menu a {
+    margin-left: -15px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #49c8f0;
+    font-size: 20px;
+    letter-spacing: -.5px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home-menu nav .input-bar {
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+#search-input {
+    background: none;
+    vertical-align: middle;
+
+    padding:7px 10px;
+    width: 200px;
+    border: 1px solid #49c8f0;
+    border-radius: 4px;
+}
+
+.home-menu nav .user {
+    max-width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .user a {
+    margin-inline-start: 20px;
+    color: #49c8f0;
+    margin-block-end: 20px;
+}
+
+#blackline {
+    height: 1.5px;
+    background-color: #49c8f0;
+}

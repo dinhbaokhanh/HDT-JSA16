@@ -131,7 +131,8 @@ h2{
 }
 
 .items-image {
-    width: 100%;
+    width: 400px;
+    height: 225px;
 }
 
 .items-name {
