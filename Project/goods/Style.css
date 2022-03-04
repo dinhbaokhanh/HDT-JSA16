@@ -80,3 +80,61 @@ nav .user a {
     height: 1.5px;
     background-color: #49c8f0;
 }
+
+/* product image */
+.product {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product-images {
+    width: 42%;
+}
+
+.mySlides {
+    border: 1px solid #49c8f0;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.image-switch {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-switch img {
+    border: 1px solid #49c8f0;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.image-button {
+    width: 100px;
+}
+
+
+/* product info */
+
+.product-info {
+    width: 35%;
+}
+
+.product-info .title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.product-info .bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 2px;
+    background-color: #40b9dd;
+}
+
+.product-info p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
