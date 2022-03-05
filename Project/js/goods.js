@@ -29,3 +29,13 @@ function sel(id) {
     id.className='selected-option';  
 }
 
+// quantity
+function increase(){
+    var textBox = document.getElementById("text");
+    textBox.value++;
+    
+}    
+function decrease(){
+  var textBox = document.getElementById("text");
+    textBox.value--;
+}
