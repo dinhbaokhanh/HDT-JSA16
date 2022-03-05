@@ -30,12 +30,13 @@ function sel(id) {
 }
 
 // quantity
-function increase(){
-    var textBox = document.getElementById("text");
-    textBox.value++;
-    
-}    
 function decrease(){
-  var textBox = document.getElementById("text");
-    textBox.value--;
+  var textBox = document.getElementById("quantity-input");
+    if (textBox.value > 1 ) {
+        textBox.value--;
+  }
 }
+function increase(){
+    var textBox = document.getElementById("quantity-input");
+    textBox.value++;  
+}  

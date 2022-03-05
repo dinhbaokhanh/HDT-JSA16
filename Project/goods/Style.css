@@ -119,7 +119,7 @@ nav .user a {
 /* product info */
 
 .product-info {
-    width: 32%;
+    width: 35%;
 }
 
 .product-info .title {
@@ -240,3 +240,60 @@ nav .user a {
     color: rgb(255, 80, 109);
 }
 
+/* quantity */
+.quantity {
+    margin-top: 5px;
+    display: inline-flex;
+    width: 40%;    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.quantity-button {
+    width: 60px;
+    height: 35px;
+    font-size: 20px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+#quantity-input {
+    width: 120px;
+    height: 35px;
+
+    border: none;
+    text-align: center;
+}
+
+.buy button {
+    margin: 25px 38px 0;
+    width: 400px;
+    height: 60px;
+    
+    display: inline-block;
+    background: rgb(255, 80, 109); 
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none;
+
+    transition-duration: 0.4s;
+    border: 1px solid rgb(255, 80, 109);
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: rgb(255, 80, 109);
+    border: 1px solid rgb(255, 80, 109);
+}

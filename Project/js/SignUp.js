@@ -22,22 +22,22 @@ if (localStorage.getItem("users") == null) {
 
 const signUp = document.getElementById("sign-up");
 signUp.addEventListener("submit", (event) => {
-    event.preventDefault();
-  // dung de chan su kien reload mac dinh cua trinh duyet
-    const data = {
-        email: signUp.email.value,
-        password: signUp.password.value
-    }
-    console.log(data);
-  // LAY DL tren localStorage ve
-    let getUsersOnLocalStorage = JSON.parse(localStorage.getItem("users"));
-    getUsersOnLocalStorage.push(data);
-    localStorage.setItem('users', JSON.stringify(getUsersOnLocalStorage))
+      event.preventDefault();
+    // dung de chan su kien reload mac dinh cua trinh duyet
+      const data = {
+          email: signUp.email.value,
+          password: signUp.password.value
+      }
+      console.log(data);
+    // LAY DL tren localStorage ve
+      let getUsersOnLocalStorage = JSON.parse(localStorage.getItem("users"));
+      getUsersOnLocalStorage.push(data);
+      localStorage.setItem('users', JSON.stringify(getUsersOnLocalStorage))
 
-    signUp.email.value = ""
-    signUp.password.value = ""
+      signUp.email.value = ""
+      signUp.password.value = ""
 
 
-  // windows.location.href = '../signIn.html'
-    window.location = "https://github.com/dinhbaokhanh/HDT-JSA16/blob/main/Project-cu%E1%BB%91i-kh%C3%B3a/login.html";
+    // windows.location.href = '../signIn.html'
+      window.location = "";
 })
