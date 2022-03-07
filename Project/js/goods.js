@@ -43,12 +43,12 @@ function increase(){
 
 
 // Modal
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("cart");
-var success_card = document.getElementsByClassName("success-card")
-var close = document.getElementsByClassName("close")[0];
-var close_footer = document.getElementsByClassName("close-footer")[0];
-var order = document.getElementsByClassName("order")[0];
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("cart");
+let success_card = document.getElementsByClassName("success-card")
+let close = document.getElementsByClassName("close")[0];
+let close_footer = document.getElementsByClassName("close-footer")[0];
+let order = document.getElementsByClassName("order")[0];
 btn.onclick = function () {
     modal.style.display = "block";
 }
@@ -64,27 +64,28 @@ window.onclick = function (event) {
     }
 }
 
-var remove_cart = document.getElementsByClassName("btn-danger");
-for (var i = 0; i < remove_cart.length; i++) {
-    var button = remove_cart[i]
+let remove_cart = document.getElementsByClassName("btn-danger");
+for (let i = 0; i < remove_cart.length; i++) {
+    let button = remove_cart[i]
     button.addEventListener("click", function () {
-        var button_remove = event.target
+        let button_remove = event.target
         button_remove.parentElement.parentElement.parentElement.remove()
     })
 }
 
 function updatecart() {
-    var cart_item = document.getElementsByClassName("cart-items")[0];
-    var cart_rows = cart_item.getElementsByClassName("cart-row");
-    var total = 0;
-    for (var i = 0; i < cart_rows.length; i++) {
-        var cart_row = cart_rows[i]
-        var price_item = cart_row.getElementsByClassName("cart-price")[0]
-        var quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
-        var price = parseFloat(price_item.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
-        var quantity = quantity_item.value // lấy giá trị trong thẻ input
+    let cart_item = document.getElementsByClassName("cart-items")[0];
+    let cart_rows = cart_item.getElementsByClassName("cart-row");
+    let total = 0;
+    for (let i = 0; i < cart_rows.length; i++) {
+        let cart_row = cart_rows[i]
+        let price_item = cart_row.getElementsByClassName("cart-price")[0]
+        let quantity_item = cart_row.getElementsByClassName("cart-quantity-input")[0]
+        let price = parseFloat(price_item.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
+        let quantity = quantity_item.value // lấy giá trị trong thẻ input
         total = total + (price * quantity)
     }
     document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VND'
    
 }
+
