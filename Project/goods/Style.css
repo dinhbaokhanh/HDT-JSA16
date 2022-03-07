@@ -117,6 +117,10 @@ nav .user a {
 
 
 /* product info */
+#container {
+    position: relative;
+    z-index: 0;
+}
 
 .product-info {
     width: 35%;
@@ -242,7 +246,7 @@ nav .user a {
 
 /* quantity */
 .quantity {
-    margin-top: 5px;
+    margin-top: 8px;
     display: inline-flex;
     width: 40%;    
     border-top: 1px solid black;
@@ -297,3 +301,145 @@ button:hover {
     color: rgb(255, 80, 109);
     border: 1px solid rgb(255, 80, 109);
 }
+
+/* cart */
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+  
+.modal-content {
+    margin: 0 auto;
+    width: 35%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+  
+.modal-body {
+    padding: 1rem;
+}
+  
+.modal-footer {
+    display: flex;
+    border-top: 1px solid #aaaaaa;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #aaaaaa;
+    padding: 1rem;
+}
+  
+.modal-footer>:not(:first-child) {
+    margin-left: .25rem;
+}
+    
+.btn-primary {
+    outline: none;
+
+    font-size: 15px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    color: #fff;
+    background-color: #40b9dd;
+    border-radius: 8px;
+
+}
+
+.btn-primary:hover {
+    color: #40b9dd;
+    background-color: #ffffff;
+    border-color: #40b9dd;
+}
+  
+.modal-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaaaaa;
+    padding: 1rem;
+}
+  
+h5.modal-title {
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart-item {
+    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-name {
+    font-size: 15px;
+}
+.cart-item-option {
+    font-size: 13px;
+}
+.cart-price {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.cart-quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-quantity .quantity {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    width: 80px;
+    height: 35px;
+}
+.cart-quantity .quantity .quantity-button {
+    border: none;
+}
+
+.btn-danger {
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
