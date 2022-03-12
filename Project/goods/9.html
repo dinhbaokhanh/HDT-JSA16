@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omaru Polka Birthday Celebration 2022</title>
+    <link rel="shortcut icon" href="../images/logo.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="./Style.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div>
+        <div class= "home-menu" >
+            
+            <nav>
+                <div class="max-width">
+                
+                    <div class="logo">
+                        <a href="../home.html"><img src="../images/hololiveshop_logo.png" alt=""></a>
+                    </div>
+    
+                    <ul class="menu">
+
+                        <a href="../list.html">
+                            <li>Products</li>
+                        </a>
+
+                        <a href="../Upcoming.html">
+                            <li>Upcoming Goods</li>
+                        </a>
+
+                    </ul>
+
+                    <div class="user">
+                        <a href="../LogIn.html">
+                            <i class="far fa-user fa-2x"></i>
+                        </a>
+                        
+                        <a style="cursor: pointer;" id="cart" >
+                            <i class="fas fa-shopping-basket fa-2x"></i>
+                        </a>
+
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <div id="empty-cart">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Cart</h5>
+                                <span class="close">&times;</span>
+                            </div>
+                            <br><br><br><br><br><br><br><br><br><p style="text-align: center; font-size: 17px;"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+
+                        <div id="modal-content">                        
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Cart</h5>
+                                <span class="close">&times;</span>
+                            </div>
+
+                            <div class="modal-body">
+                                        
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column"></span>
+                                    <span class="cart-price cart-header cart-column"></span>
+                                    <span class="cart-quantity cart-header cart-column"></span>
+                                </div>
+
+                                <div class="cart-items">
+
+                                    
+                                
+                                </div>
+                            
+                            </div>
+    
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+
+            <div id="blackline"></div>
+
+        </div>
+        
+        <br><br><br>
+        
+        <div class="product">
+
+            <div class="product-images">
+
+                <div class="content">
+                    <img class="mySlides" src="./images/moona_BD2022_top_en_png_1000x.webp" >
+                    <img class="mySlides" src="./images/moona_BD2022_set_en_png_800x.webp" >
+                    <img class="mySlides" src="./images/moona_BD2022_tokuten_en_png_800x.webp" >
+                    <img class="mySlides" src="./images/moona_BD2022_tanpin01_en_png_800x.webp" >
+                    <img class="mySlides" src="./images/moona_BD2022_tanpin02_en_png_800x.webp" >
+                </div>
+                
+                <div class="image-switch">
+                    
+                    <img src="./images/moona_BD2022_top_en_png_1000x.webp" class="image-button" onclick="currentDiv(1)" alt="">
+                    <img src="./images/moona_BD2022_set_en_png_800x.webp" class="image-button " onclick="currentDiv(2)" alt="">
+                    <img src="./images/moona_BD2022_tokuten_en_png_800x.webp" class="image-button " onclick="currentDiv(3)" alt="">
+                    <img src="./images/moona_BD2022_tanpin01_en_png_800x.webp" class="image-button " onclick="currentDiv(4)" alt="" > 
+                    <img src="./images/moona_BD2022_tanpin02_en_png_800x.webp" class="image-button " onclick="currentDiv(5)" alt="" > 
+                
+                </div>
+
+            </div>
+
+            <div class="product-info">
+                <div class="title">Moona Hoshinova Birthday 2022</div>
+                <div class="bar"></div>
+                <br>
+                <p>This product is to celebrate the birthday of Moona Hoshinova from hololive Indonesia.</p>
+                <br>
+                <p>◇Birthday Special Full Set
+                    <br>〈Item Description〉
+                    <br>　A special full set of items to celebrate Moona Hoshinova’s birthday.
+                    <br>
+                    <br>〈Full Set Content〉
+                    <br>・2 Special Items
+                    <br>・Bonus: Moona Hoshinova’s Autographed Postcard, Illustration by Nyori
+                </p>
+                <br><br>
+                <div class="set">Set:</div>
+
+                <div id="container">
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(2)">
+                        <img src="./images/moona_BD2022_set_en_png_800x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">Birthday Special Full Set and Bonus</div>
+                        <div class="set-info">
+                            <div class="set-price">2500000 VND</div>
+                            <div class="yellow-cautions">
+                                <div class="buy-all">CHEAPER!</div>
+                                <div class="stock"> In Stock </div>
+                            </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(4)">
+                        <img src="./images/moona_BD2022_tanpin01_en_png_800x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">"Night with You ♡" Body Pillow Cover</div>
+                        <div class="set-info">
+                            <div class="set-price">2200000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+
+                    <label class="options demo" onclick="sel(this) ;currentDiv(5)">
+                        <img src="./images/moona_BD2022_tanpin02_en_png_800x.webp" class="set-image" style="display: none;">
+                        <div class="set-name">"Kissable in Your Dream" Magic Mug (Color Changing)</div>
+                        <div class="set-info">
+                            <div class="set-price">499000 VND</div>
+                            <div class="stock"> In Stock </div>
+                        </div>
+                    </label>
+                    
+                </div>
+                <br>
+
+                <div class="set">Quantity:</div>
+                <div class="quantity">
+                    <div class="quantity-button" onclick="decrease()"> - </div>
+                    <input type="text" onkeypress="return isNumberKey(event)" id="quantity-input" value="1" min="1">
+                    <div class="quantity-button" onclick="increase()"> + </div>
+                </div>
+
+                <br><br>
+            
+                <div class="buy">
+                    <button class="btn-cart">ADD TO CART</button>
+                </div>
+
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <br><br>
+    
+
+    <script src="../js/goods.js"></script>
+
+</body>
+</html>

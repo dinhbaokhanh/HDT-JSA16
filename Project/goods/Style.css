@@ -96,13 +96,15 @@ nav .user a {
 .mySlides {
     border: 1px solid #49c8f0;
     width: 600px;
+    height: 600px;
+    object-fit: cover;
     margin-bottom: 20px;
 }
 
 .image-switch {
     width: 600px;
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+    text-align: center;
 }
 
 .image-switch img {
@@ -113,6 +115,8 @@ nav .user a {
 
 .image-button {
     width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 

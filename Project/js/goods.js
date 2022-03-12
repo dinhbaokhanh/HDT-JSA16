@@ -184,11 +184,49 @@ function addItemToCart(big_title, title, price, img, quantity) {
         }
     }
     
+    if (big_title == title) {
+        var cartRowContents = `
+        <div class="cart-item cart-column">
+            <img class="cart-item-image" src="${img}" style = "{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }">
+            <div>
+                <div class="cart-item-big-title">${big_title}</div>
+            </div>
+        </div>
+        <span class="cart-price cart-column">${price}</span>
+        <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" onkeypress="return isNumberKey(event)" type="text" value="${quantity}">
+            <div class="btn btn-danger" type="button">Remove</div>
+        </div>`
+    cartRow.innerHTML = cartRowContents
+    cartItems.append(cartRow)
+
     
+    
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+        var button_remove = event.target
+        button_remove.parentElement.parentElement.remove()
+        updatecart()
+    })
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
+        var input = event.target
+        if (isNaN(input.value) || input.value <= 0) {
+        input.value = quantity;
+        }
+        updatecart()
+    })
+    } else {
 
     var cartRowContents = `
         <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${img}" width="100" height="100">
+            <img class="cart-item-image" src="${img}" style = "{
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+            }">
             <div>
                 <div class="cart-item-big-title">${big_title}</div>
                 <div class="space-in-title"></div>
@@ -217,6 +255,6 @@ function addItemToCart(big_title, title, price, img, quantity) {
         }
         updatecart()
     })
-}
+}}
 
 
