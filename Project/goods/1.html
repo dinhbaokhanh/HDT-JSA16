@@ -45,78 +45,44 @@
                     </div>
 
                     <div id="myModal" class="modal">
-                        <div class="modal-content">
+
+                        <div id="empty-cart">
                             <div class="modal-header">
                                 <h5 class="modal-title">Cart</h5>
                                 <span class="close">&times;</span>
                             </div>
+                            <br><br><br><br><br><br><br><br><br><p style="text-align: center; font-size: 17px;"> Your cart is empty</p><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+
+                        <div id="modal-content">                        
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Cart</h5>
+                                <span class="close">&times;</span>
+                            </div>
+
                             <div class="modal-body">
+                                        
+                                <div class="cart-row">
+                                    <span class="cart-item cart-header cart-column"></span>
+                                    <span class="cart-price cart-header cart-column"></span>
+                                    <span class="cart-quantity cart-header cart-column"></span>
+                                </div>
+
                                 <div class="cart-items">
 
-                                    <div class="cart-item cart-column">
-                                        <div class="cart-item-image"><img src="./images/polka_BD2022_tanpin01_900x.webp" width="120" height="120"></div>
-                                        <div>
-                                            <div class="cart-item-title">
-                                                <div class="cart-item-name">Omaru Polka Birthday Celebration 2022</div>
-                                                <div class="cart-item-option">Rubber Mat</div>
-                                            </div>
-                                            <div class="cart-price cart-column">599000 VND</div>
-                                            <div class="cart-quantity cart-column">
-                                                <div class="quantity">
-                                                    <div class="quantity-button" onclick="decrease()" style="width:20px"> - </div>
-                                                    <input type="text" class="cart-quantity-input" id="quantity-input" style="width:40px;background-color: transparent;" value="1">
-                                                    <div class="quantity-button" onclick="increase()" style="width:20px"> + </div>
-                                                </div>
-                                                <div class="btn-danger" onclick="updatecart()">Remove</div>
-                                            </div>                            
-                                        </div>
-                                    </div>
                                     
-                                    <div class="cart-item cart-column">
-                                        <div class="cart-item-image"><img src="./images/polka_BD2022_tanpin02_900x.webp" width="120" height="120"></div>
-                                        <div style="margin-left: 41px;">
-                                            <div class="cart-item-title">
-                                                <div class="cart-item-name">Omaru Polka Birthday Celebration 2022</div>
-                                                <div  class="cart-item-option">Global Fashion Statement ! Polka's Secret Fan Backpack</div>
-                                            </div>
-                                            <div class="cart-price cart-column">1395000 VND</div>
-                                            <div class="cart-quantity cart-column">
-                                                <div class="quantity">
-                                                    <div class="quantity-button" onclick="decrease()" style="width:20px"> - </div>
-                                                    <input type="text" class="cart-quantity-input" id="quantity-input" style="width:40px;background-color: transparent;" value="1">
-                                                    <div class="quantity-button" onclick="increase()" style="width:20px"> + </div>
-                                                </div>
-                                                <div class="btn-danger" onclick="updatecart()">Remove</div>
-                                            </div>                            
-                                        </div>
-                                    </div>
-
-                                    <div class="cart-item cart-column">
-                                        <div class="cart-item-image"><img src="./images/polka_BD2022_tanpin03_900x.webp" width="120" height="120"></div>
-                                        <div>
-                                            <div class="cart-item-title">
-                                                <div class="cart-item-name">Omaru Polka Birthday Celebration 2022</div>
-                                                <div class="cart-item-option">Anywhere You Go! Static Polpeller Headband</div>
-                                            </div>
-                                            <div class="cart-price cart-column">499000 VND</div>
-                                            <div class="cart-quantity cart-column">
-                                                <div class="quantity">
-                                                    <div class="quantity-button" onclick="decrease()" style="width:20px"> - </div>
-                                                    <input type="text" class="cart-quantity-input" id="quantity-input" style="width:40px;background-color: transparent;" value="1">
-                                                    <div class="quantity-button" onclick="increase()" style="width:20px"> + </div>
-                                                </div>
-                                                <div class="btn-danger" onclick="updatecart()">Remove</div>
-                                            </div>                            
-                                        </div>
-                                    </div>
-
+                                
                                 </div>
+                            
                             </div>
-        
+    
                             <div class="modal-footer">
-                                <button type="button" class="btn-primary order">CHECKOUT: <span class="cart-total-price">2493000 VND</span> </button>
+                                <button type="button" class="btn btn-primary order">CHECKOUT: &nbsp;<span class="cart-total-price">0 &nbsp; VND</span></button>
                             </div>
+
                         </div>
+
                     </div>
 
                 </div>
@@ -171,7 +137,8 @@
 
                 <div id="container">
                     
-                    <label class="options demo" onclick="sel(this) ;currentDiv(2)" >
+                    <label class="selected-option demo" onclick="sel(this) ;currentDiv(2)" >
+                        <img src="./images/polka_BD2022_set_900x.webp" class="set-image" style="display: none;">
                         <div class="set-name">All set and bonus</div>
                         <div class="set-info">
                             <div class="set-price">2200000 VND</div>
@@ -183,6 +150,7 @@
                     </label>
 
                     <label class="options demo" onclick="sel(this) ;currentDiv(3)">
+                        <img src="./images/polka_BD2022_tanpin01_900x.webp" class="set-image" style="display: none;">
                         <div class="set-name">Rubber Mat</div>
                         <div class="set-info">
                             <div class="set-price">599000 VND</div>
@@ -191,6 +159,7 @@
                     </label>
 
                     <label class="options demo" onclick="sel(this) ;currentDiv(4)">
+                        <img src="./images/polka_BD2022_tanpin02_900x.webp" class="set-image" style="display: none;">
                         <div class="set-name">Global Fashion Statement ! Polka's Secret Fan Backpack</div>
                         <div class="set-info">
                             <div class="set-price">1395000 VND</div>
@@ -199,6 +168,7 @@
                     </label>
 
                     <label class="options demo" onclick="sel(this) ;currentDiv(5)">
+                        <img src="./images/polka_BD2022_tanpin03_900x.webp" class="set-image" style="display: none;">
                         <div class="set-name">Anywhere You Go! Static Polpeller Headband</div>
                         <div class="set-info">
                             <div class="set-price">499000 VND</div>
@@ -212,7 +182,7 @@
                 <div class="set">Quantity:</div>
                 <div class="quantity">
                     <div class="quantity-button" onclick="decrease()"> - </div>
-                    <input type="text" id="quantity-input" value="1" min="1">
+                    <input type="text" onkeypress="return isNumberKey(event)" id="quantity-input" value="1" min="1">
                     <div class="quantity-button" onclick="increase()"> + </div>
                 </div>
 

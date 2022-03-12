@@ -305,10 +305,11 @@ button:hover {
 /* cart */
 
 /* modal */
+
 .modal {
     display: none;
     position: fixed;
-    z-index: 9;
+    z-index: 1;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -318,10 +319,23 @@ button:hover {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
 }
-  
-.modal-content {
+
+#empty-cart {
     margin: 0 auto;
-    width: 35%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+  
+#modal-content {
+    margin: 0 auto;
+    width: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -338,43 +352,35 @@ button:hover {
   
 .modal-footer {
     display: flex;
-    border-top: 1px solid #aaaaaa;
     padding: 1rem;
     flex-direction: row;
     justify-content: center;
-    border-top: 1px solid #aaaaaa;
     padding: 1rem;
 }
   
 .modal-footer>:not(:first-child) {
     margin-left: .25rem;
 }
-    
-.btn-primary {
+  
+.btn {
+    cursor: pointer;
     outline: none;
-
-    font-size: 15px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
     line-height: 1.25;
     text-align: center;
     white-space: nowrap;
+    vertical-align: middle;
     border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 17px;
+    border-radius: .25rem;
     transition: all .2s ease-in-out;
-    cursor: pointer;
-    height: 60px;
-    width: 300px;
-    color: #fff;
-    background-color: #40b9dd;
-    border-radius: 8px;
-
 }
-
-.btn-primary:hover {
-    color: #40b9dd;
-    background-color: #ffffff;
-    border-color: #40b9dd;
+  
+.btn-primary {
+    color: #fff;
+    background-color: #0275d8;
+    border-color: #0275d8;
 }
   
 .modal-header {
@@ -386,8 +392,7 @@ button:hover {
 }
   
 h5.modal-title {
-    font-size: 25px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
 }
   
 .close {
@@ -404,42 +409,110 @@ h5.modal-title {
     text-decoration: none;
     cursor: pointer;
 }
-
-.cart-item {
-    margin: 35px;
+  
+ 
+  
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+  
+.cart-column {
     display: flex;
-    justify-content: space-between;
-}
-
-.cart-item-name {
-    font-size: 15px;
-}
-.cart-item-option {
-    font-size: 13px;
-}
-.cart-price {
+    align-items: center;
+    
+    margin-right: 1.5em;
+    padding-bottom: 10px;
     margin-top: 10px;
-    font-size: 15px;
-    font-weight: 400;
 }
-.cart-quantity {
+  
+.cart-row {
     display: flex;
-    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+  
+.cart-item {
+    width: 45%;
+    height: auto;
+}
+  
+.cart-price {
+    width: 30%;
+    font-size: 20px;
+    color: #333;
+}
+  
+.cart-quantity {
+    width: 35%;
 }
 
-.cart-quantity .quantity {
-    border: 0.5px solid black;
-    border-radius: 5px;
-    width: 80px;
-    height: 35px;
+.cart-item-big-title {
+    color: #333;
+    margin-left: .5em;
+    font-weight: 600;
+    font-size: 16px;
 }
-.cart-quantity .quantity .quantity-button {
-    border: none;
+  
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 15px;
+}
+  
+.cart-item-image {
+    width: 110px;
+    margin-right: 10px;
+    height: auto;
 }
 
 .btn-danger {
-    margin-top: 10px;
     text-decoration: underline;
-    cursor: pointer;
 }
 
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #40b9dd;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.0em;
+    margin-right: 25px;
+}
+    
+.cart-row:last-child .cart-column {
+    border: none;
+}
+  
+.cart-total {
+    text-align: end;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+  
+.order {
+    margin: 25px 38px 0;
+    width: 400px;
+    height: 60px;
+    
+    background: #49c8f0; 
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 35px;
+    cursor: pointer;
+    border: none;
+
+    transition-duration: 0.4s;
+    border: none;
+}
+
+.order:hover {
+    background-color: #ffffff;
+    color: #49c8f0;
+    border: 1px solid #49c8f0;
+}
