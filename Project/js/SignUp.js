@@ -41,3 +41,4 @@ signUp.addEventListener("submit", (event) => {
     // windows.location.href = '../signIn.html'
       window.location = "";
 })
+
