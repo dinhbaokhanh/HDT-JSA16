@@ -26,7 +26,7 @@ signIn.addEventListener("submit", (event) => {
     if (usersFromLocalStorage.find(item => item.email == userLogin.email) != undefined) {
         let value = usersFromLocalStorage.find(item => item.email == userLogin.email);
         if (value.password == userLogin.password) {
-            console.log('login success')
+            window.location.href = "./home.html"
         } else {
             alert("Wrong password. Please try again")
         }
@@ -35,6 +35,7 @@ signIn.addEventListener("submit", (event) => {
     signIn.email.value = ""
     signIn.password.value = ""
 
+    
 
 })
 

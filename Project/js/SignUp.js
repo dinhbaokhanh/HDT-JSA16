@@ -1,13 +1,3 @@
-// alert filling the form
-var once = false;
-function caution(){
-    if(once == false) {
-        alert('Please fill out the form!');
-        once = true;
-    }
-};
-
-
 let users = [];
 
 // Nen co dong nay.
@@ -22,7 +12,7 @@ if (localStorage.getItem("users") == null) {
 
 const signUp = document.getElementById("sign-up");
 signUp.addEventListener("submit", (event) => {
-      event.preventDefault();
+    event.preventDefault();
     // dung de chan su kien reload mac dinh cua trinh duyet
       const data = {
           email: signUp.email.value,
@@ -39,6 +29,6 @@ signUp.addEventListener("submit", (event) => {
 
 
     // windows.location.href = '../signIn.html'
-      window.location = "";
+      window.location.href = "./LogIn.html";
 })
 
