@@ -208,6 +208,15 @@ nav .user a {
     border-radius: 12px;
 }
 
+.out-of-stock {
+    background: #999999;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
 .buy-all {
     background: #ecc408;
     color: #fff;

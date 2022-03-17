@@ -158,10 +158,13 @@ for (var i = 0; i < add_cart.length; i++) {
         var title = option[0].children[1].innerText;
         var price = option[0].children[2].children[0].innerText;
         var quantity = document.getElementById("quantity-input").value;
-            
-        addItemToCart(big_title, title, price, img, quantity)
-        updatecart()    
+        var availbility = option[0].children[2].children[1].innerText;
+        console.log(availbility)
+         
         
+        addItemToCart(big_title, title, price, img, quantity)
+        updatecart()   
+          
     })
 }
 
