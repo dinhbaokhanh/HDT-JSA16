@@ -143,6 +143,38 @@ nav .user a {
     background-color: #40b9dd;
 }
 
+.rating {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+    float: left
+}
+.rating>input {
+    display: none
+}
+.rating>label {
+    position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #40b9dd;
+    cursor: pointer
+}
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+.rating>label:hover:before, .rating>label:hover~label:before {
+    opacity: 1 
+}
+.rating>input:checked~label:before {
+    opacity: 1
+}
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
 .product-info p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
@@ -202,18 +234,18 @@ nav .user a {
 .stock {
     background: #ecc408;
     color: #fff;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
     border-radius: 12px;
 }
 
 .out-of-stock {
     background: #999999;
     color: #fff;
-    font-size: 10px;
-    font-weight: 500;
-    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 10px;
     border-radius: 12px;
 }
 
@@ -528,4 +560,54 @@ h5.modal-title {
     background-color: #ffffff;
     color: #49c8f0;
     border: 1px solid #49c8f0;
+}
+
+/* Footer */
+.footer {
+    padding: 50px 50px 0 50px;
+    background-color: #717171;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title img {
+    width: 12%;
+}
+
+.footer-des {
+    color:#a0a0a0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.footer-des a {
+    color: #a0a0a0;
+}
+.footer-des a:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer-des:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer-aside {
+    background-color: #717171;
+    color: #ffffff;
+    padding: 0px 50px 50px ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-aside a{
+    color: #b8b8b8;
+    font-size: 12px;
+    margin-right: 100px;
+}
+
+.footer-aside a:hover{
+    color: black;
 }

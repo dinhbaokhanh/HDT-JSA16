@@ -109,3 +109,53 @@ button:hover {
     background-color: #ffffff;
     color: #49c8f0;
 }
+
+/* Footer */
+.footer {
+    padding: 50px 50px 0 50px;
+    background-color: #717171;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-title img {
+    width: 12%;
+}
+
+.footer-des {
+    color:#a0a0a0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.footer-des a {
+    color: #a0a0a0;
+}
+.footer-des a:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer-des:hover {
+    color: #ffffff;
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer-aside {
+    background-color: #717171;
+    color: #ffffff;
+    padding: 0px 50px 50px ;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-aside a{
+    color: #b8b8b8;
+    font-size: 12px;
+    margin-right: 100px;
+}
+
+.footer-aside a:hover{
+    color: black;
+}

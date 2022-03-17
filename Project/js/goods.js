@@ -160,11 +160,13 @@ for (var i = 0; i < add_cart.length; i++) {
         var quantity = document.getElementById("quantity-input").value;
         var availbility = option[0].children[2].children[1].innerText;
         console.log(availbility)
-         
         
-        addItemToCart(big_title, title, price, img, quantity)
-        updatecart()   
-          
+        if (availbility === 'In Stock') {
+            addItemToCart(big_title, title, price, img, quantity)
+            updatecart()   
+        } else {
+            alert('This option is currently unavailable')
+        }   
     })
 }
 
