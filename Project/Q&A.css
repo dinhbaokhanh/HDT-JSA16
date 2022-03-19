@@ -85,12 +85,14 @@ body{
 
 .QandA h2 {
     font-size: 25px;
-    margin: 10px 0px 25px 0px;
+    margin: 20px 0px 30px 0px;
 }
 .QandA details {
     font-size: 17px;
 }
+
 .QandA summary {
+    cursor: pointer;
     margin: 10px 0px 10px 0px;
 }
 .answers {
