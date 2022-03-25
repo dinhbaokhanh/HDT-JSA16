@@ -31,3 +31,13 @@ signUp.addEventListener("submit", (event) => {
   // windows.location.href = '../signIn.html'
   window.location = "./LogIn.html";
 })
+
+
+// responsive css
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

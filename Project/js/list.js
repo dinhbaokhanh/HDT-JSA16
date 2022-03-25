@@ -108,10 +108,9 @@ function filterResults(filters) {
 
 function SearchEngine() {
     // Lấy giá trị
-    var input, filter, goods, items, items_name, i, txtValue;
+    var input, filter, items, items_name, i, txtValue;
     input = document.getElementById('search-input');
     filter = input.value.toLowerCase();
-    goods = document.getElementsByClassName('goods');
     items = document.getElementsByClassName('items');
   
     // Ẩn div ko có trong search
@@ -325,4 +324,16 @@ function addItemToCart(big_title, title, price, img, quantity) {
         }
         updatecart()
     })
+}
+
+
+
+// responsive
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+  
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
